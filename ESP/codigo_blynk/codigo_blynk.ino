@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPLE2olxXrP"
-#define BLYNK_DEVICE_NAME "Horta"
-#define BLYNK_AUTH_TOKEN "92JKMuQ_mHNI-ynRtGK-ZdS0PDN8ijpl"//nJvZ4ASXwwF3gmRG_RVpVztnjAm2trSx
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_DEVICE_NAME ""
+#define BLYNK_AUTH_TOKEN "l"//nJvZ4ASXwwF3gmRG_RVpVztnjAm2trSx
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
 
