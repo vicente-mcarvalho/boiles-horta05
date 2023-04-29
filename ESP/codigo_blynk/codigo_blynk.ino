@@ -1,7 +1,6 @@
-#define BLYNK_TEMPLATE_ID ""
-#define BLYNK_DEVICE_NAME ""
-#define BLYNK_AUTH_TOKEN "l"//nJvZ4ASXwwF3gmRG_RVpVztnjAm2trSx
-/* Comment this out to disable prints and save space */
+#include "WiFiCredentials.h"
+#include "BlynkCredentials.h"
+
 #define BLYNK_PRINT Serial
 
 #include <WiFi.h>
@@ -19,8 +18,8 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "ESP32-projeto01";
-char pass[] = "da2s383jqo7grolJ";
+char ssid[] = WFC_SSID;
+char pass[] = WFC_PASS;
 
 bool bomba_bt;
 int  bomba_tempo; 
@@ -71,6 +70,6 @@ void LigarBomba(void){
 
 void DesligarBomba(void){
   Blynk.virtualWrite(V_PIN, 0);
-  digitalWrite(PIN_BOMBA, LOW);
-  
+  digitalWrite(PIN_BOMBA, LOW);  
 }
+
